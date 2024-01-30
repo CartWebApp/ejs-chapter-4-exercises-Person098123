@@ -1,5 +1,5 @@
 function range(start, end, step = 1) {
-  // Add code.
+  // Add code
 }
 
 function sum(numbers) {
