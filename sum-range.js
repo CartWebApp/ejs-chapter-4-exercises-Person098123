@@ -3,10 +3,10 @@ function range(start, end, step ) {
   var array=[];
   
   if(step > 0){
-    for(var i=start; 1<= end; i+=step)
+    for(var i=start; i <= end; i += step)
     array.push(i);
   } else{
-    for(var i=start; 1 >= end; i+=step)
+    for(var i=start; i >= end; i += step)
     array.push(i);
   }
   return array;
