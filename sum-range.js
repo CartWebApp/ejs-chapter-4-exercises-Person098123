@@ -1,9 +1,22 @@
-function range(start, end, step = 1) {
-  if(step==null) step=1;
+function range(start, end, step ) {
+  if (step==null) step = 1;
+  var array=[];
+  
+  if(step > 0){
+    for(var i=start; 1<= end; i+=step)
+    array.push(i);
+  } else{
+    for(var i=start; 1 >= end; i+=step)
+    array.push(i);
+  }
+  return array;
 }
 
 function sum(numbers) {
-  // Add code.
+  var total = 0;
+  for(var i = 0; i < numbers.lenght; i++)
+  total += numbers[i];
+return total;
 }
 
 
