@@ -13,9 +13,9 @@ function range(start, end, step ) {
 }
 
 function sum(numbers) {
-  var total = 0;
-  for(var i = 0; i < numbers.lenght; i++)
-  total += numbers[i];
+  let total = 0;
+  for(let value of numbers)
+  total += value;
 return total;
 }
 
