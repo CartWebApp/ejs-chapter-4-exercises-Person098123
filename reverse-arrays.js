@@ -1,9 +1,18 @@
 function reverseArray(arr) {
-  // Add code.
+  let output = [];
+  for(i = arr.length - 1; i >= 0; i--){
+  output.push (arr[i]);
+  }
+  return output;
 }
 
 function reverseArrayInPlace(arr) {
-  // Add code.
+  for (let i = 0; i < Math.floor(arr.length / 2); i++){
+  let old = arr[i];
+  arr[i] = arr[arr.length - 1 - i];
+  arr[arr.length - 1 - i]= old;
+  }
+  return arr;
 }
 
 
